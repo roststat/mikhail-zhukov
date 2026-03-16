@@ -19,7 +19,7 @@ export default function Nav() {
         <Link href="/" className="logo">
           <div className="logo-box">М</div>
           <div>
-            <div className="logo-text-main">Михаил</div>
+            <div className="logo-text-main">Михаил Жуков</div>
             <div className="logo-text-sub">Профайлинг · FASE</div>
           </div>
         </Link>

@@ -1,6 +1,6 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Для бизнеса — Михаил" };
+export const metadata = { title: "Для бизнеса — Михаил Жуков" };
 
 export default function ServicesBusiness() {
   return (

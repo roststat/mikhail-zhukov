@@ -37,12 +37,12 @@ export default function ServicePage({ tag, title, subtitle, items }: Props) {
             <div>
               <div className="dark-card" style={{marginBottom:"16px"}}>
                 <h3>Записаться на консультацию</h3>
-                <p>Оставьте заявку — и Михаил свяжется с вами в течение 24 часов, чтобы обсудить ваш запрос и подобрать подходящий формат.</p>
+                <p>Оставьте заявку — и Михаил Жуков свяжется с вами в течение 24 часов, чтобы обсудить ваш запрос и подобрать подходящий формат.</p>
                 <Link href="/contacts" className="btn btn-gold" style={{display:"block",textAlign:"center"}}>Оставить заявку</Link>
               </div>
               <div className="quote">
                 <div className="quote-text">"Профайлинг — это не про то, чтобы повесить на человека ярлык. Это про то, чтобы увидеть его настоящего."</div>
-                <div className="quote-attr">— Михаил</div>
+                <div className="quote-attr">— Михаил Жуков</div>
               </div>
             </div>
           </div>

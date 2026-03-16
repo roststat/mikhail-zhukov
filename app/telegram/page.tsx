@@ -1,4 +1,4 @@
-export const metadata = { title: "Telegram — Михаил" };
+export const metadata = { title: "Telegram — Михаил Жуков" };
 
 export default function Telegram() {
   const posts = [

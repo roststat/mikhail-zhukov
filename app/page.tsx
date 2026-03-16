@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="gold-rule"></div>
                 <span className="tag">Учёный-исследователь</span>
               </div>
-              <h1 className="hero-h1 f-display">Михаил</h1>
+              <h1 className="hero-h1 f-display">Михаил Жуков</h1>
               <div className="hero-sub">Профайлинг<br />и методика FASE</div>
               <p className="hero-desc">Автор функциональной модели человека FASE. Помогаю людям, командам и организациям понять внутренние механизмы — и использовать их осознанно.</p>
               <div className="hero-btns">
@@ -85,7 +85,7 @@ export default function Home() {
               <h2 className="f-display" style={{fontSize:"clamp(34px,4.5vw,58px)",color:"var(--ink)",fontWeight:600,marginBottom:"22px",lineHeight:1.1}}>
                 Что такое<br /><em style={{color:"var(--gold)",fontStyle:"italic"}}>методика FASE?</em>
               </h2>
-              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASE — функциональная модель человека, разработанная Михаилом за 15 лет исследований. Она описывает, как человек устроен внутри: как функционирует, взаимодействует с системами вокруг него и что им движет.</p>
+              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASE — функциональная модель человека, разработанная Михаил Жуковом за 15 лет исследований. Она описывает, как человек устроен внутри: как функционирует, взаимодействует с системами вокруг него и что им движет.</p>
               <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"36px"}}>Это не тест и не типология — это инструмент понимания. Применяется в личной работе, бизнес-консультировании и настройке коммуникации в командах.</p>
               <Link href="/fason" className="btn btn-outline">Узнать подробнее →</Link>
             </div>
@@ -219,7 +219,7 @@ export default function Home() {
           <div className="gold-rule gold-rule-center" style={{marginBottom:"20px"}}></div>
           <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,52px)",color:"var(--ink)",fontWeight:600,marginBottom:"18px"}}>Готовы начать?</h2>
           <p style={{fontSize:"16px",color:"var(--text-muted)",maxWidth:"440px",margin:"0 auto 36px",lineHeight:1.8}}>Напишите — и мы вместе определим, какой формат работы подойдёт именно вам.</p>
-          <Link href="/contacts" className="btn btn-gold">Связаться с Михаилом</Link>
+          <Link href="/contacts" className="btn btn-gold">Связаться с Михаил Жуковом</Link>
         </div>
       </section>
     </>

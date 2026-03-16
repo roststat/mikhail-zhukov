@@ -1,4 +1,4 @@
-export const metadata = { title: "Видео — Михаил" };
+export const metadata = { title: "Видео — Михаил Жуков" };
 
 export default function Videos() {
   const videos = [

@@ -1,4 +1,4 @@
-export const metadata = { title: "Научные работы — Михаил" };
+export const metadata = { title: "Научные работы — Михаил Жуков" };
 
 export default function Science() {
   const publications = [
@@ -58,7 +58,7 @@ export default function Science() {
                 </div>
                 <div className="quote">
                   <div className="quote-text">"Наука о человеке должна говорить с человеком на понятном языке — без потери точности."</div>
-                  <div className="quote-attr">— Михаил</div>
+                  <div className="quote-attr">— Михаил Жуков</div>
                 </div>
               </div>
             </div>

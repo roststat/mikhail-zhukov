@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="logo" style={{marginBottom:0}}>
                 <div className="logo-box">М</div>
                 <div>
-                  <div className="footer-brand-name">Михаил</div>
+                  <div className="footer-brand-name">Михаил Жуков</div>
                   <div className="footer-brand-sub">Профайлинг · FASE</div>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       <div className="footer-bar">
         <div className="wrap footer-bar-inner">
-          <p className="footer-copy">© 2026 Михаил. Все права защищены.</p>
+          <p className="footer-copy">© 2026 Михаил Жуков. Все права защищены.</p>
           <p className="footer-copy">Авторская методика FASE — функциональная модель человека</p>
         </div>
       </div>

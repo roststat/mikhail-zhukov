@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Об авторе — Михаил",
+  title: "Об авторе — Михаил Жуков",
   description: "Учёный-исследователь с более чем 15-летним опытом изучения психологии личности и профайлинга. Автор авторской методики FASE.",
 };
 
@@ -42,7 +42,7 @@ export default function About() {
             <div>
               <span className="tag">История</span>
               <div className="gold-rule" style={{margin:"12px 0 32px"}}></div>
-              <p style={{fontSize:"17px",color:"var(--text)",lineHeight:1.9,marginBottom:"20px"}}>Михаил — учёный-исследователь с более чем 15-летним опытом изучения психологии личности и профайлинга. Автор авторской методики FASE — функциональной модели человека, которая объясняет, как каждый из нас устроен внутри и как взаимодействует с миром вокруг.</p>
+              <p style={{fontSize:"17px",color:"var(--text)",lineHeight:1.9,marginBottom:"20px"}}>Михаил Жуков — учёный-исследователь с более чем 15-летним опытом изучения психологии личности и профайлинга. Автор авторской методики FASE — функциональной модели человека, которая объясняет, как каждый из нас устроен внутри и как взаимодействует с миром вокруг.</p>
               <p style={{fontSize:"17px",color:"var(--text)",lineHeight:1.9,marginBottom:"20px"}}>Его путь начался с глубокого академического интереса к тому, как работает личность — не на уровне симптомов и поведения, а на уровне функций и структуры. Это привело к многолетним исследованиям, десяткам публикаций в научном сообществе P-17 и созданию методики, которая сегодня применяется в личной работе, бизнесе и крупных организациях.</p>
               <p style={{fontSize:"17px",color:"var(--text)",lineHeight:1.9,marginBottom:"36px"}}>FASE — это не ещё один психологический тест. Это рабочий инструмент понимания: что движет конкретным человеком, как создать для него условия максимальной эффективности и что мешает ему реализовываться.</p>
               <div className="grid-3" style={{gap:"12px",marginTop:"8px"}}>
@@ -96,7 +96,7 @@ export default function About() {
         <div className="wrap">
           <h2 className="f-display" style={{fontSize:"clamp(28px,3.5vw,44px)",color:"var(--ink)",marginBottom:"18px"}}>Работаем вместе?</h2>
           <p style={{fontSize:"16px",color:"var(--text-muted)",marginBottom:"30px"}}>Напишите — расскажу, чем могу помочь именно в вашей ситуации.</p>
-          <Link href="/contacts" className="btn btn-gold">Написать Михаилу</Link>
+          <Link href="/contacts" className="btn btn-gold">Написать Михаил Жукову</Link>
         </div>
       </section>
     </>

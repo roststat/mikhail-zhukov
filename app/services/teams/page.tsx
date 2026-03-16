@@ -1,6 +1,6 @@
 import ServicePage from "@/components/ServicePage";
 
-export const metadata = { title: "Для команд — Михаил" };
+export const metadata = { title: "Для команд — Михаил Жуков" };
 
 export default function ServicesTeams() {
   return (

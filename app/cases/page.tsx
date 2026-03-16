@@ -1,4 +1,4 @@
-export const metadata = { title: "Кейсы — Михаил" };
+export const metadata = { title: "Кейсы — Михаил Жуков" };
 
 export default function Cases() {
   const cases = [

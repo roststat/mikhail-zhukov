@@ -35,7 +35,7 @@ export default function Contacts() {
                 <div className="form-success show">
                   <div className="form-success-icon">✓</div>
                   <h3 className="f-display" style={{fontSize:"28px",color:"#F7F5F0",marginBottom:"10px"}}>Сообщение отправлено</h3>
-                  <p style={{color:"rgba(247,245,240,.5)"}}>Михаил ответит в течение 24 часов.</p>
+                  <p style={{color:"rgba(247,245,240,.5)"}}>Михаил Жуков ответит в течение 24 часов.</p>
                 </div>
               ) : (
                 <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
@@ -82,7 +82,7 @@ export default function Contacts() {
                 ))}
                 <div className="quote" style={{marginTop:"20px"}}>
                   <div className="quote-text">"Для корпоративных проектов и приглашений на лекции — пишите с описанием организации и формата."</div>
-                  <div className="quote-attr">— Михаил</div>
+                  <div className="quote-attr">— Михаил Жуков</div>
                 </div>
               </div>
             </div>
