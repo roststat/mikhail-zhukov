@@ -20,7 +20,7 @@ export default function Nav() {
           <div className="logo-box">М</div>
           <div>
             <div className="logo-text-main">Михаил</div>
-            <div className="logo-text-sub">Профайлинг · FASON</div>
+            <div className="logo-text-sub">Профайлинг · FASE</div>
           </div>
         </Link>
         <div className="nav-links">
@@ -31,7 +31,7 @@ export default function Nav() {
             <Link href="/about" className="nav-link">Об авторе</Link>
           </div>
           <div className="nav-item">
-            <Link href="/fason" className="nav-link">Методика FASON</Link>
+            <Link href="/fason" className="nav-link">Методика FASE</Link>
           </div>
           <div className="nav-item">
             <span className="nav-link" style={{cursor:"pointer"}}>Услуги <span className="arrow">▾</span></span>
@@ -74,7 +74,7 @@ export default function Nav() {
       <div className="mobile-menu" style={{display: mobileOpen ? "block" : "none"}}>
         <Link href="/" className="mobile-link" onClick={() => setMobileOpen(false)}>Главная</Link>
         <Link href="/about" className="mobile-link" onClick={() => setMobileOpen(false)}>Об авторе</Link>
-        <Link href="/fason" className="mobile-link" onClick={() => setMobileOpen(false)}>Методика FASON</Link>
+        <Link href="/fason" className="mobile-link" onClick={() => setMobileOpen(false)}>Методика FASE</Link>
         <Link href="/services/personal" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для личного роста</Link>
         <Link href="/services/business" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для бизнеса</Link>
         <Link href="/services/teams" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для команд</Link>

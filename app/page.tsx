@@ -50,10 +50,10 @@ export default function Home() {
                 <span className="tag">Учёный-исследователь</span>
               </div>
               <h1 className="hero-h1 f-display">Михаил</h1>
-              <div className="hero-sub">Профайлинг<br />и методика FASON</div>
-              <p className="hero-desc">Автор функциональной модели человека FASON. Помогаю людям, командам и организациям понять внутренние механизмы — и использовать их осознанно.</p>
+              <div className="hero-sub">Профайлинг<br />и методика FASE</div>
+              <p className="hero-desc">Автор функциональной модели человека FASE. Помогаю людям, командам и организациям понять внутренние механизмы — и использовать их осознанно.</p>
               <div className="hero-btns">
-                <Link href="/fason" className="btn btn-gold">Методика FASON</Link>
+                <Link href="/fason" className="btn btn-gold">Методика FASE</Link>
                 <Link href="/contacts" className="btn btn-outline-light">Записаться</Link>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FASON INTRO */}
+      {/* FASE INTRO */}
       <section className="section bg-warm">
         <div className="wrap">
           <div className="grid-2">
@@ -83,9 +83,9 @@ export default function Home() {
               <span className="tag">Авторская разработка</span>
               <div className="gold-rule" style={{margin:"12px 0 24px"}}></div>
               <h2 className="f-display" style={{fontSize:"clamp(34px,4.5vw,58px)",color:"var(--ink)",fontWeight:600,marginBottom:"22px",lineHeight:1.1}}>
-                Что такое<br /><em style={{color:"var(--gold)",fontStyle:"italic"}}>методика FASON?</em>
+                Что такое<br /><em style={{color:"var(--gold)",fontStyle:"italic"}}>методика FASE?</em>
               </h2>
-              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASON — функциональная модель человека, разработанная Михаилом за 15 лет исследований. Она описывает, как человек устроен внутри: как функционирует, взаимодействует с системами вокруг него и что им движет.</p>
+              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASE — функциональная модель человека, разработанная Михаилом за 15 лет исследований. Она описывает, как человек устроен внутри: как функционирует, взаимодействует с системами вокруг него и что им движет.</p>
               <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"36px"}}>Это не тест и не типология — это инструмент понимания. Применяется в личной работе, бизнес-консультировании и настройке коммуникации в командах.</p>
               <Link href="/fason" className="btn btn-outline">Узнать подробнее →</Link>
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
           <div className="grid-3">
             {[
               {href:"/services/personal",mark:"I",icon:"📖",tag:"Личное",title:"Для личного роста",desc:"Семейные ситуации, психологические запросы, самопознание, профессиональная ориентация — понять себя и изменить траекторию."},
-              {href:"/services/business",mark:"II",icon:"💼",tag:"Бизнес",title:"Для предпринимателей",desc:"Карьерный профайлинг, понимание своей роли в бизнесе, работа с запросами в финансах и управлении через методику FASON."},
+              {href:"/services/business",mark:"II",icon:"💼",tag:"Бизнес",title:"Для предпринимателей",desc:"Карьерный профайлинг, понимание своей роли в бизнесе, работа с запросами в финансах и управлении через методику FASE."},
               {href:"/services/teams",mark:"III",icon:"👥",tag:"Команды",title:"Для организаций",desc:"Настройка коммуникации внутри команд, корпоративные проекты, работа с крупными организациями и силовыми структурами."},
             ].map((c) => (
               <Link key={c.href} href={c.href} className="aud-card">
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
           <div className="grid-3">
             {[
-              {tag:"Психология",title:"Как работает функциональная модель человека: введение в FASON",date:"12 марта 2026",min:"8 мин"},
+              {tag:"Психология",title:"Как работает функциональная модель человека: введение в FASE",date:"12 марта 2026",min:"8 мин"},
               {tag:"Бизнес",title:"Профайлинг в управлении командой: что видит профайлер и что скрыто от руководителя",date:"5 марта 2026",min:"11 мин"},
               {tag:"Личное",title:"Профессиональная ориентация через профайлинг: найти своё место без тестов",date:"25 февраля 2026",min:"6 мин"},
             ].map((a) => (
@@ -199,7 +199,7 @@ export default function Home() {
             </div>
             <div>
               {[
-                {date:"12 мар",text:"Почему умные люди принимают плохие решения? Разбираем через FASON-модель — где интеллект заканчивается и начинается функциональная слепота."},
+                {date:"12 мар",text:"Почему умные люди принимают плохие решения? Разбираем через FASE-модель — где интеллект заканчивается и начинается функциональная слепота."},
                 {date:"10 мар",text:"Три признака того, что в команде нарушена коммуникация — и почему стандартные тренинги по тимбилдингу здесь не помогут."},
                 {date:"7 мар",text:"Профориентация без тестов: как профайлинг помогает найти своё место быстрее и точнее любого опросника."},
               ].map((p) => (

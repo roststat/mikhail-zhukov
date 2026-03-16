@@ -11,10 +11,10 @@ export default function Footer() {
                 <div className="logo-box">М</div>
                 <div>
                   <div className="footer-brand-name">Михаил</div>
-                  <div className="footer-brand-sub">Профайлинг · FASON</div>
+                  <div className="footer-brand-sub">Профайлинг · FASE</div>
                 </div>
               </div>
-              <p className="footer-desc">Учёный-исследователь. Автор функциональной модели человека FASON. Эксперт по профайлингу личности и командной коммуникации.</p>
+              <p className="footer-desc">Учёный-исследователь. Автор функциональной модели человека FASE. Эксперт по профайлингу личности и командной коммуникации.</p>
               <div className="footer-socials">
                 <a href="https://t.me/mikhail_profiling" target="_blank" className="footer-social" title="Telegram">✈</a>
                 <a href="https://vk.com" target="_blank" className="footer-social" title="ВКонтакте">В</a>
@@ -28,7 +28,7 @@ export default function Footer() {
               <Link href="/services/personal" className="footer-link">Для личного роста</Link>
               <Link href="/services/business" className="footer-link">Для бизнеса</Link>
               <Link href="/services/teams" className="footer-link">Для команд</Link>
-              <Link href="/fason" className="footer-link">Методика FASON</Link>
+              <Link href="/fason" className="footer-link">Методика FASE</Link>
             </div>
             <div>
               <div className="footer-col-title">Контент</div>
@@ -50,7 +50,7 @@ export default function Footer() {
       <div className="footer-bar">
         <div className="wrap footer-bar-inner">
           <p className="footer-copy">© 2026 Михаил. Все права защищены.</p>
-          <p className="footer-copy">Авторская методика FASON — функциональная модель человека</p>
+          <p className="footer-copy">Авторская методика FASE — функциональная модель человека</p>
         </div>
       </div>
     </footer>
