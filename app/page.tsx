@@ -116,10 +116,11 @@ export default function Home() {
             <div className="gold-rule gold-rule-center" style={{margin:"12px auto 18px"}}></div>
             <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,50px)",color:"var(--ink)"}}>Кому это нужно?</h2>
           </div>
-          <div className="grid-2" style={{maxWidth:"860px",margin:"0 auto"}}>
+          <div className="grid-3" style={{maxWidth:"960px",margin:"0 auto"}}>
             {[
               {href:"/services/individual",mark:"I",icon:"📖",tag:"Личное",title:"Людям",desc:"Тем, кто хочет перейти от выживания к зрелой ответственности в личной жизни — увидеть свои закономерности и трансформировать их."},
-              {href:"/services/corporate",mark:"II",icon:"💼",tag:"Бизнес и команды",title:"Командам и организациям",desc:"Командам — настроить внутреннюю коммуникацию и принимать решения без эмоциональных помех. Организациям — системное развитие через понимание человеческого фактора."},
+              {href:"/services/corporate",mark:"II",icon:"💼",tag:"Командам",title:"Командам",desc:"Тем, кому важно настроить внутреннюю коммуникацию и принимать решения без эмоциональных помех."},
+              {href:"/services/corporate",mark:"III",icon:"🏢",tag:"Организациям",title:"Организациям",desc:"Стремящимся к системному развитию и устойчивости через понимание человеческого фактора."},
             ].map((c) => (
               <Link key={c.href} href={c.href} className="aud-card">
                 <div className="aud-watermark">{c.mark}</div>
