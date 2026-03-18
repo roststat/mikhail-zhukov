@@ -2,6 +2,12 @@ import Link from "next/link";
 
 export const metadata = { title: 'Программа "Интуитивная коммуникация" — Михаил Жуков' };
 
+const otherPrograms = [
+  { href: "/services/individual/kto-ya", num: "01", title: "«Кто я такой» | Solve et Coagula", price: "от 28 000 ₽" },
+  { href: "/services/individual/zdorovaya", num: "03", title: "Здоровая коммуникация", price: "от 39 000 ₽" },
+  { href: "/services/individual/soprovozhdenie", num: "04", title: "Индивидуальное сопровождение", price: "от 45 000 ₽" },
+];
+
 export default function ProgramIntuitivnaya() {
   return (
     <>
@@ -74,6 +80,28 @@ export default function ProgramIntuitivnaya() {
                 <Link href="/services/individual" style={{ color: "var(--gold)", fontSize: "14px", textDecoration: "none" }}>← Все индивидуальные программы</Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ДРУГИЕ ПРОГРАММЫ */}
+      <section className="section-sm bg-surface">
+        <div className="wrap">
+          <span className="tag">Другие программы</span>
+          <div className="gold-rule" style={{ margin: "12px 0 28px" }}></div>
+          <div className="grid-3">
+            {otherPrograms.map((p) => (
+              <Link key={p.href} href={p.href} style={{ textDecoration: "none" }}>
+                <div className="pillar" style={{ padding: "20px 24px", cursor: "pointer" }}>
+                  <div className="pillar-num">{p.num}</div>
+                  <div style={{ flex: 1 }}>
+                    <div className="pillar-title" style={{ marginBottom: "6px" }}>{p.title}</div>
+                    <div style={{ color: "var(--gold)", fontSize: "14px", fontWeight: 600 }}>{p.price}</div>
+                  </div>
+                  <div style={{ color: "var(--gold)", fontSize: "18px" }}>→</div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
