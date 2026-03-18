@@ -47,11 +47,11 @@ export default function Home() {
             <div className="hero-text" id="hero-text">
               <div style={{display:"flex",alignItems:"center",gap:"12px",marginBottom:"30px"}}>
                 <div className="gold-rule"></div>
-                <span className="tag">Учёный-исследователь</span>
+                <span className="tag">Психолог-профайлер</span>
               </div>
               <h1 className="hero-h1 f-display">Михаил Жуков</h1>
               <div className="hero-sub">Профайлинг<br />и методика FASE</div>
-              <p className="hero-desc">Автор функциональной модели человека FASE. Помогаю людям, командам и организациям понять внутренние механизмы — и использовать их осознанно.</p>
+              <p className="hero-desc">Автор и разработчик функциональной модели аффективной системы FASE. Помогаю людям, командам и организациям понять внутренние механизмы своей эмоциональной системы и использовать их осознанно.</p>
               <div className="hero-btns">
                 <Link href="/fason" className="btn btn-gold">Методика FASE</Link>
                 <Link href="/contacts" className="btn btn-outline-light">Записаться</Link>
@@ -85,15 +85,15 @@ export default function Home() {
               <h2 className="f-display" style={{fontSize:"clamp(34px,4.5vw,58px)",color:"var(--ink)",fontWeight:600,marginBottom:"22px",lineHeight:1.1}}>
                 Что такое<br /><em style={{color:"var(--gold)",fontStyle:"italic"}}>методика FASE?</em>
               </h2>
-              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASE — функциональная модель человека, разработанная Михаил Жуковом за 15 лет исследований. Она описывает, как человек устроен внутри: как функционирует, взаимодействует с системами вокруг него и что им движет.</p>
-              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"36px"}}>Это не тест и не типология — это инструмент понимания. Применяется в личной работе, бизнес-консультировании и настройке коммуникации в командах.</p>
+              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"18px"}}>FASE — функциональная модель аффективной системы. Это авторский инструмент диагностики и управления эмоциональными реакциями, разработанный Михаилом Жуковым.</p>
+              <p style={{fontSize:"16px",color:"var(--text-muted)",lineHeight:1.9,marginBottom:"36px"}}>Она позволяет разложить «стихию чувств» на составляющие, увидеть закономерности и трансформировать непроизвольные реакции в осознанные стратегии.</p>
               <Link href="/fason" className="btn btn-outline">Узнать подробнее →</Link>
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:"14px"}}>
               {[
-                ["01","Личность","Глубинная структура личности — то, что не видно при поверхностном взаимодействии."],
-                ["02","Система","Человек внутри систем: семья, команда, организация. Как взаимодействовать максимально эффективно."],
-                ["03","Управление","Инструмент осознанного управления — не манипуляция, а создание правильных условий."],
+                ["01","Диагностика","Авторский инструмент диагностики эмоциональных реакций — видеть закономерности там, где другие видят хаос."],
+                ["02","Трансформация","Трансформировать непроизвольные реакции в осознанные стратегии поведения."],
+                ["03","Управление","Управлять собой, отношениями и бизнес-процессами с точностью и осознанностью."],
               ].map(([num, title, text]) => (
                 <div key={num} className="pillar">
                   <div className="pillar-num">{num}</div>
@@ -114,12 +114,12 @@ export default function Home() {
           <div style={{textAlign:"center",marginBottom:"60px"}}>
             <span className="tag">Направления работы</span>
             <div className="gold-rule gold-rule-center" style={{margin:"12px auto 18px"}}></div>
-            <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,50px)",color:"var(--ink)"}}>Кому подходит профайлинг?</h2>
+            <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,50px)",color:"var(--ink)"}}>Кому это нужно?</h2>
           </div>
           <div className="grid-2" style={{maxWidth:"860px",margin:"0 auto"}}>
             {[
-              {href:"/services/individual",mark:"I",icon:"📖",tag:"Личное",title:"Индивидуальные программы",desc:"4 авторские программы — от самоидентификации до долгосрочного сопровождения. Работа с собой: тело, эмоции, коммуникация, сценарии."},
-              {href:"/services/corporate",mark:"II",icon:"💼",tag:"Бизнес и команды",title:"Для бизнеса и команд",desc:"Карьерный профайлинг, управление, диагностика и настройка коммуникации в командах и организациях. Программы по запросу."},
+              {href:"/services/individual",mark:"I",icon:"📖",tag:"Личное",title:"Людям",desc:"Тем, кто хочет перейти от выживания к зрелой ответственности в личной жизни — увидеть свои закономерности и трансформировать их."},
+              {href:"/services/corporate",mark:"II",icon:"💼",tag:"Бизнес и команды",title:"Командам и организациям",desc:"Командам — настроить внутреннюю коммуникацию и принимать решения без эмоциональных помех. Организациям — системное развитие через понимание человеческого фактора."},
             ].map((c) => (
               <Link key={c.href} href={c.href} className="aud-card">
                 <div className="aud-watermark">{c.mark}</div>
@@ -216,8 +216,8 @@ export default function Home() {
       <section className="section-sm bg-surface" style={{textAlign:"center"}}>
         <div className="wrap">
           <div className="gold-rule gold-rule-center" style={{marginBottom:"20px"}}></div>
-          <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,52px)",color:"var(--ink)",fontWeight:600,marginBottom:"18px"}}>Готовы начать?</h2>
-          <p style={{fontSize:"16px",color:"var(--text-muted)",maxWidth:"440px",margin:"0 auto 36px",lineHeight:1.8}}>Напишите — и мы вместе определим, какой формат работы подойдёт именно вам.</p>
+          <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,52px)",color:"var(--ink)",fontWeight:600,marginBottom:"18px"}}>Настроим систему на вас</h2>
+          <p style={{fontSize:"16px",color:"var(--text-muted)",maxWidth:"480px",margin:"0 auto 36px",lineHeight:1.8}}>Мы не просто говорим об эмоциях. Мы настраиваем систему так, чтобы она работала на вас. Напишите — расскажу, чем могу помочь именно в вашей ситуации.</p>
           <Link href="/contacts" className="btn btn-gold">Связаться с Михаилом</Link>
         </div>
       </section>
