@@ -116,11 +116,10 @@ export default function Home() {
             <div className="gold-rule gold-rule-center" style={{margin:"12px auto 18px"}}></div>
             <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,50px)",color:"var(--ink)"}}>Кому подходит профайлинг?</h2>
           </div>
-          <div className="grid-3">
+          <div className="grid-2" style={{maxWidth:"860px",margin:"0 auto"}}>
             {[
-              {href:"/services/personal",mark:"I",icon:"📖",tag:"Личное",title:"Для личного роста",desc:"Семейные ситуации, психологические запросы, самопознание, профессиональная ориентация — понять себя и изменить траекторию."},
-              {href:"/services/business",mark:"II",icon:"💼",tag:"Бизнес",title:"Для предпринимателей",desc:"Карьерный профайлинг, понимание своей роли в бизнесе, работа с запросами в финансах и управлении через методику FASE."},
-              {href:"/services/teams",mark:"III",icon:"👥",tag:"Команды",title:"Для организаций",desc:"Настройка коммуникации внутри команд, корпоративные проекты, работа с крупными организациями и силовыми структурами."},
+              {href:"/services/individual",mark:"I",icon:"📖",tag:"Личное",title:"Индивидуальные программы",desc:"4 авторские программы — от самоидентификации до долгосрочного сопровождения. Работа с собой: тело, эмоции, коммуникация, сценарии."},
+              {href:"/services/corporate",mark:"II",icon:"💼",tag:"Бизнес и команды",title:"Для бизнеса и команд",desc:"Карьерный профайлинг, управление, диагностика и настройка коммуникации в командах и организациях. Программы по запросу."},
             ].map((c) => (
               <Link key={c.href} href={c.href} className="aud-card">
                 <div className="aud-watermark">{c.mark}</div>
@@ -219,7 +218,7 @@ export default function Home() {
           <div className="gold-rule gold-rule-center" style={{marginBottom:"20px"}}></div>
           <h2 className="f-display" style={{fontSize:"clamp(30px,4vw,52px)",color:"var(--ink)",fontWeight:600,marginBottom:"18px"}}>Готовы начать?</h2>
           <p style={{fontSize:"16px",color:"var(--text-muted)",maxWidth:"440px",margin:"0 auto 36px",lineHeight:1.8}}>Напишите — и мы вместе определим, какой формат работы подойдёт именно вам.</p>
-          <Link href="/contacts" className="btn btn-gold">Связаться с Михаил Жуковом</Link>
+          <Link href="/contacts" className="btn btn-gold">Связаться с Михаилом</Link>
         </div>
       </section>
     </>

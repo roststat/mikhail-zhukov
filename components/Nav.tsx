@@ -37,9 +37,8 @@ export default function Nav() {
             <span className="nav-link" style={{cursor:"pointer"}}>Услуги <span className="arrow">▾</span></span>
             <div className="dropdown">
               <div className="dropdown-inner">
-                <Link href="/services/personal" className="dropdown-link">Для личного роста</Link>
-                <Link href="/services/business" className="dropdown-link">Для бизнеса</Link>
-                <Link href="/services/teams" className="dropdown-link">Для команд</Link>
+                <Link href="/services/individual" className="dropdown-link">Индивидуальные программы</Link>
+                <Link href="/services/corporate" className="dropdown-link">Для бизнеса и команд</Link>
               </div>
             </div>
           </div>
@@ -75,9 +74,8 @@ export default function Nav() {
         <Link href="/" className="mobile-link" onClick={() => setMobileOpen(false)}>Главная</Link>
         <Link href="/about" className="mobile-link" onClick={() => setMobileOpen(false)}>Об авторе</Link>
         <Link href="/fason" className="mobile-link" onClick={() => setMobileOpen(false)}>Методика FASE</Link>
-        <Link href="/services/personal" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для личного роста</Link>
-        <Link href="/services/business" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для бизнеса</Link>
-        <Link href="/services/teams" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для команд</Link>
+        <Link href="/services/individual" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Индивидуальные программы</Link>
+        <Link href="/services/corporate" className="mobile-link sub" onClick={() => setMobileOpen(false)}>— Для бизнеса и команд</Link>
         <Link href="/articles" className="mobile-link" onClick={() => setMobileOpen(false)}>Статьи</Link>
         <Link href="/videos" className="mobile-link" onClick={() => setMobileOpen(false)}>Видео</Link>
         <Link href="/cases" className="mobile-link" onClick={() => setMobileOpen(false)}>Кейсы</Link>
