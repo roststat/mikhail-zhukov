@@ -1,24 +1,12 @@
 import Link from "next/link";
-import { client } from "@/sanity/lib/client";
-import { allPostsQuery } from "@/sanity/lib/queries";
 
-export const revalidate = 60;
+const articles = [
+  { slug: "fase-model", tag: "Психология", title: "Как работает функциональная модель человека: введение в FASE", date: "12 марта 2026", min: "8 мин" },
+  { slug: "profiling-team", tag: "Бизнес", title: "Профайлинг в управлении командой: что видит профайлер и что скрыто от руководителя", date: "5 марта 2026", min: "11 мин" },
+  { slug: "career-profiling", tag: "Личное", title: "Профессиональная ориентация через профайлинг: найти своё место без тестов", date: "25 февраля 2026", min: "6 мин" },
+];
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString("ru-RU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
-export default async function Articles() {
-  const articles = await client.fetch(allPostsQuery);
-
-  const allCategories = ["Все", ...Array.from(
-    new Set(articles.flatMap((a: any) => a.categories?.map((c: any) => c.title) ?? []))
-  )] as string[];
-
+export default function Articles() {
   return (
     <>
       <div className="page-header">
@@ -33,32 +21,18 @@ export default async function Articles() {
 
       <section className="section bg-warm">
         <div className="wrap">
-          {articles.length === 0 ? (
-            <p style={{ color: "var(--text-muted)", fontSize: "16px" }}>
-              Статьи пока не добавлены. Добавьте их в{" "}
-              <Link href="/studio" style={{ color: "var(--gold)" }}>Sanity Studio</Link>.
-            </p>
-          ) : (
-            <div className="grid-3">
-              {articles.map((a: any) => (
-                <Link key={a._id} href={`/articles/${a.slug.current}`} className="art-card">
-                  <div className="art-meta">
-                    <span className="tag">{a.categories?.[0]?.title ?? "Статья"}</span>
-                    {a.readTime && <span className="read-time">{a.readTime} мин</span>}
-                  </div>
-                  <div className="art-title">{a.title}</div>
-                  {a.excerpt && (
-                    <p style={{ fontSize: "14px", color: "var(--text-muted)", lineHeight: 1.7, margin: "10px 0 16px" }}>
-                      {a.excerpt}
-                    </p>
-                  )}
-                  {a.publishedAt && (
-                    <div className="art-date">{formatDate(a.publishedAt)}</div>
-                  )}
-                </Link>
-              ))}
-            </div>
-          )}
+          <div className="grid-3">
+            {articles.map((a) => (
+              <div key={a.slug} className="art-card">
+                <div className="art-meta">
+                  <span className="tag">{a.tag}</span>
+                  <span className="read-time">{a.min}</span>
+                </div>
+                <div className="art-title">{a.title}</div>
+                <div className="art-date">{a.date}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
