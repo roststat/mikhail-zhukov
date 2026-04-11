@@ -59,10 +59,7 @@ export default function Home() {
             </div>
             <div className="hero-img" id="hero-img">
               <div className="portrait">
-                <div className="portrait-placeholder">
-                  <div className="portrait-initial">М</div>
-                  <div className="portrait-label">Фото автора</div>
-                </div>
+                <img src="/mikhail-hero.png" alt="Михаил Жуков" />
                 <div className="corner corner-tr"></div>
                 <div className="corner corner-bl"></div>
               </div>

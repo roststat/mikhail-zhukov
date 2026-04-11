@@ -53,10 +53,7 @@ export default function About() {
             </div>
             <div>
               <div className="portrait" style={{maxWidth:"380px",margin:"0 auto 32px"}}>
-                <div className="portrait-placeholder">
-                  <div className="portrait-initial">М</div>
-                  <div className="portrait-label">Фото автора</div>
-                </div>
+                <img src="/mikhail-about.png" alt="Михаил Жуков" />
                 <div className="corner corner-tr"></div>
                 <div className="corner corner-bl"></div>
               </div>
